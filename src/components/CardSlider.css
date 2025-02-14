@@ -1,0 +1,100 @@
+.card-slider {
+  width: 1346px; /* Ширина блока */
+  height: 400px; /* Увеличенная высота блока (например, 400px) */
+  margin: 20px auto; /* Центрирование блока */
+  text-align: left; /* Выровнять текст по левому краю */
+}
+
+.slider-title {
+  font-family: 'Ferry', sans-serif; /* Применение шрифта */
+  font-weight: 900; /* Жирность текста */
+  font-size: 45px; /* Размер шрифта */
+  line-height: 54px; /* Высота строки */
+  letter-spacing: 1%; /* Межбуквенный интервал */
+  margin-bottom: 20px; /* Отступ снизу */
+}
+.tariff-includes {
+  position: absolute; /* Абсолютное позиционирование */
+  width: 313px; /* Ширина текста */
+  height: 24px; /* Высота текста */
+  top: 2364px; /* Высота (проверьте, возможно, значение слишком высокое) */
+  left: 90px; /* Отступ слева */
+  gap: 0px; /* Пробел между элементами (если есть) */
+  opacity: 1; /* Полная видимость текста */
+  font-family: 'Inter', sans-serif; /* Шрифт */
+  font-size: 14px; /* Размер шрифта */
+  color: black; /* Цвет текста */
+  z-index: 2; /* Убедитесь, что текст выше изображения */
+}
+.card-container {
+  width: 100%; /* Ширина контейнера */
+  overflow: hidden; /* Скрыть лишнее содержимое */
+  height: 300px; /* Увеличенная высота карточки (например, 300px или больше) */
+}
+
+.cards-row {
+  display: flex; /* Отображение карточек в ряд */
+  transition: transform 0.5s ease; /* Плавный переход при переключении */
+}
+
+.card {
+  width: 400px; /* Ширина карточки */
+  height: 225px; /* Высота карточки */
+  background-color: white; /* Белый цвет фона карточки */
+  display: flex;
+  align-items: center; /* Центрирование текста по вертикали */
+  justify-content: center; /* Центрирование текста по горизонтали */
+  border-radius: 10px; /* Скругление углов карточки */
+  padding: 20px; /* Отступ внутри карточки */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Тень по всему контуру карточки */
+  margin-right: 20px; /* Отступ между карточками */
+}
+
+.buttons {
+  display: flex;
+  justify-content: center; /* Центрирование кнопок */
+  margin-top: 10px; /* Отступ сверху */
+}
+
+.slider-button {
+  background-color: #5970FF; /* Цвет кнопки */
+  color: white; /* Цвет текста кнопки */
+  border: none; /* Убираем рамку */
+  border-radius: 5px; /* Скругление углов кнопки */
+  padding: 10px 20px; /* Отступы внутри кнопки */
+  margin: 0 10px; /* Отступы между кнопками */
+  cursor: pointer; /* Указатель при наведении */
+}
+@media (max-width: 768px) {
+  .card-slider {
+    width: 100%; /* Ширина блока на мобильных */
+    height: auto; /* Высота блока автоматически */
+  }
+
+  .slider-title {
+    font-size: 30px; /* Уменьшаем размер шрифта заголовка */
+    line-height: 36px; /* Уменьшаем высоту строки заголовка */
+  }
+
+  .tariff-includes {
+    width: auto; /* Устанавливаем авто для ширины текста */
+    font-size: 12px; /* Уменьшаем размер шрифта */
+  }
+
+  .card {
+    width: 100%; /* Карточки занимают всю ширину */
+    height: auto; /* Высота карточки автоматически */
+    margin-right: 0; /* Убираем отступы между карточками */
+    padding: 10px; /* Уменьшаем отступ внутри карточки */
+  }
+
+  .buttons {
+    flex-direction: column; /* Кнопки в столбик */
+  }
+
+  .slider-button {
+    width: 100%; /* Кнопки занимают всю ширину */
+    margin: 5px 0; /* Отступы между кнопками */
+
+  }
+}

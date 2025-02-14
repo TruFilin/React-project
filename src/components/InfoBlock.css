@@ -1,0 +1,184 @@
+.info-block {
+  display: flex; /* Используем flexbox для размещения текста и изображения */
+  justify-content: space-between; /* Распределение элементов */
+}
+
+.text-section {
+  flex: 1; /* Занимает доступное пространство */
+}
+
+.text-title {
+  src: url('../assets/ferry.otf') format('truetype');
+  font-weight: 900; /* Жирность текста */
+  font-size: 60px; /* Размер шрифта */
+  line-height: 72px; /* Высота строки */
+  letter-spacing: 1%; /* Межбуквенный интервал */
+  text-align: left; /* Выровнять текст по левому краю */
+  margin: 0; /* Удалить отступы по умолчанию */
+}
+.normal-text {
+  font-size: 14px; /* Размер шрифта */
+  line-height: 20px; /* Высота строки */
+  color: black; /* Цвет текста */
+  font-weight: 400; /* Обычная жирность текста */
+}
+
+.image-section {
+  width: 620px; /* Ширина секции с изображением */
+  height: 620px; /* Высота секции с изображением */
+}
+
+.info-image {
+  width: 100%; /* Занимает всю ширину секции */
+  height: 100%; /* Занимает всю высоту секции */
+  object-fit: cover; /* Сохранение пропорций изображения */
+}
+.description-text {
+  font-family: 'Ferry', sans-serif; /* Применение шрифта */
+  font-weight: 400; /* Жирность текста */
+  font-size: 20px; /* Размер шрифта */
+  line-height: 24.2px; /* Высота строки */
+  letter-spacing: 1%; /* Межбуквенный интервал */
+  text-align: left; /* Выровнять текст по левому краю */
+  margin-top: 20px; /* Отступ сверху для отделения от предыдущего текста */
+}
+.request-button {
+  position: absolute; /* Абсолютное позиционирование кнопки */
+  width: 335px; /* Ширина кнопки */
+  height: 59px; /* Высота кнопки */
+  background-color: #5970FF; /* Цвет фона кнопки */
+  color: white; /* Цвет текста */
+  border: none; /* Убираем рамку */
+  border-radius: 5px; /* Скругление углов кнопки */
+  font-size: 18px; /* Размер шрифта */
+  cursor: pointer; /* Указатель при наведении */
+  top: 588px; /* Позиция сверху */
+  left: 120px; /* Позиция слева */
+}
+.custom-button {
+  position: absolute; /* Абсолютное позиционирование */
+  width: 355px; /* Ширина кнопки */
+  height: 59px; /* Высота кнопки */
+  margin-top: 60px; /* Отступ сверху кнопки */
+  background-color: #5970FF; /* Цвет кнопки */
+  color: white; /* Цвет текста кнопки (измените цвет на белый) */
+  border: none; /* Убираем рамку */
+  border-radius: 5px; /* Скругление углов кнопки */
+  cursor: pointer; /* Указатель при наведении */
+  z-index: 1; /* Устанавливаем z-index, чтобы кнопка была над изображением */
+}
+.error-message {
+  color: red; /* Цвет текста ошибки */
+  font-size: 14px; /* Размер шрифта */
+  margin-top: 10px; /* Отступ сверху */
+}
+.modal {
+  position: fixed; /* Фиксированное позиционирование */
+  z-index: 1000; /* Поверх остальных элементов */
+  left: 0;
+  top: 0;
+  width: 100%; /* Полная ширина */
+  height: 100%; /* Полная высота */
+  overflow: auto; /* Прокрутка, если необходимо */
+  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+}
+
+.modal-content {
+  background-color: white; /* Цвет фона модального окна */
+  margin: 15% auto; /* Отступ сверху и центрирование */
+  padding: 20px; /* Отступы внутри модального окна */
+  border: 1px solid #888; /* Рамка модального окна */
+  width: 300px; /* Ширина модального окна */
+  text-align: center; /* Центрируем текст внутри модального окна */
+}
+
+.close {
+  color: #aaa; /* Цвет для кнопки закрытия */
+  float: right; /* Правое выравнивание */
+  font-size: 28px; /* Размер шрифта */
+  font-weight: bold; /* Жирность */
+  cursor: pointer; /* Указатель при наведении */
+}
+
+.close:hover,
+.close:focus {
+  color: black; /* Цвет при наведении */
+  text-decoration: none; /* Убираем подчеркивание */
+  cursor: pointer; /* Указатель при наведении */
+}
+@media (max-width: 768px) {
+  .info-block {
+    flex-direction: column; /* Меняем направление на колонку для мобильных */
+    align-items: center; /* Центрируем элементы по горизонтали */
+  }
+
+  .text-title {
+    font-size: 30px; /* Уменьшаем размер шрифта заголовка на мобильных */
+    line-height: 36px; /* Уменьшаем высоту строки заголовка */
+  }
+
+  .normal-text {
+    font-size: 12px; /* Уменьшаем размер шрифта для нормального текста */
+  }
+
+  .image-section {
+    width: 100%; /* Ширина секции с изображением на мобильных */
+    height: auto; /* Высота автоматически для мобильных */
+  }
+
+  .info-image {
+    height: auto; /* Высота изображения автоматически для мобильных */
+  }
+
+  .request-button {
+    width: 200px; /* Уменьшаем ширину кнопки */
+    height: 59px; /* Высота кнопки */
+    margin: 10px auto; /* Центрируем кнопку по горизонтали */
+    display: block; /* Делаем кнопку блочным элементом для центрирования */
+    margin-left: -40px;
+    margin-top: 120px;
+  }
+
+  .custom-button {
+    width: 200px; /* Уменьшаем ширину кнопки */
+    height: 59px; /* Высота кнопки */
+    margin: 10px auto; /* Центрируем кнопку по горизонтали */
+    display: block; /* Делаем кнопку блочным элементом для центрирования */
+  }
+  .modal {
+    position:sticky; /* Фиксированное позиционирование */
+    z-index: 1000; /* Поверх остальных элементов */
+    left: 100px;
+    top: 100px;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+    overflow: auto; /* Прокрутка, если необходимо */
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+  }
+
+  .modal-content {
+    background-color: white; /* Цвет фона модального окна */
+    margin: 15% auto; /* Отступ сверху и центрирование */
+    padding: 20px; /* Отступы внутри модального окна */
+    border: 1px solid #888; /* Рамка модального окна */
+    width: 80%; /* Ширина модального окна для мобильных */
+    max-width: 300px; /* Максимальная ширина */
+    text-align: center; /* Центрируем текст внутри модального окна */
+  }
+
+  .close {
+    color: #aaa; /* Цвет для кнопки закрытия */
+    float: right; /* Правое выравнивание */
+    font-size: 28px; /* Размер шрифта */
+    font-weight: bold; /* Жирность */
+    cursor: pointer; /* Указатель при наведении */
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black; /* Цвет при наведении */
+    text-decoration: none; /* Убираем подчеркивание */
+    cursor: pointer; /* Указатель при наведении */
+  }
+
+}

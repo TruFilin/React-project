@@ -1,0 +1,141 @@
+.footer {
+  display: flex; /* Используем flexbox для размещения элементов */
+  justify-content: space-between; /* Распределение элементов по горизонтали */
+  align-items: center; /* Выравнивание по вертикали */
+  padding: 10px 20px; /* Отступы внутри футера */
+  background-color: white; /* Цвет фона футера */
+  width: 1440px; /* Установка фиксированной ширины */
+  height: 93px; /* Установка фиксированной высоты */
+  position: relative; /* Убедитесь, что позиция не фиксированная */
+  margin-top: 0; /* Убедитесь, что нет отступов */
+}
+.footer-logo {
+  height: 141px; /* Задайте высоту логотипа */
+  width: 141px; /* Задайте ширину логотипа */
+}
+
+.login-button {
+  width: 65px; /* Ширина кнопки */
+  height: 26px; /* Высота кнопки */
+  background-color: #7CE3E1;
+  color: white; /* Цвет текста кнопки */
+  border: none; /* Убираем рамку */
+  border-radius: 5px; /* Скругление углов кнопки */
+  cursor: pointer; /* Указатель при наведении */
+}
+
+.footer-auth {
+  display: flex; /* Используем flexbox для кнопок авторизации */
+  align-items: center; /* Выравнивание по вертикали */
+}
+
+.user-avatar {
+  width: 40px; /* Ширина аватара */
+  height: 40px; /* Высота аватара */
+  border-radius: 50%; /* Круглая форма аватара */
+  margin-right: 10px; /* Отступ справа от аватара */
+}
+
+.loader {
+  margin-right: 10px; /* Отступ справа от лоадера */
+  color: gray; /* Цвет текста лоадера */
+}
+
+
+.footer-buttons button {
+  background: none; /* Убирает фон */
+  border: none; /* Убирает рамку */
+  color: black; /* Цвет текста */
+  margin: 0 10px; /* Отступы между кнопками */
+  font-size: 16px; /* Размер шрифта */
+  cursor: pointer; /* Указатель при наведении */
+}
+
+.footer-buttons button:hover {
+  text-decoration: underline; /* Подчёркивание текста при наведении */
+}
+
+.footer-auth {
+  display: flex;
+  align-items: center;
+}
+.divider {
+  width: 2px; /* Ширина линии */
+  height: 20px; /* Высота линии */
+  background-color: #7CE3E1; /* Цвет линии */
+  margin: 0 10px; /* Отступы вокруг линии */
+}
+
+
+.login-button:hover {
+  background-color: #5970FF;;
+; /* Изменение цвета при наведении */
+}
+.register-button {
+  background: #aaaa;
+  background: none; /* Убираем фон */
+  border: none; /* Убираем рамку */
+  color: inherit; /* Унаследовать цвет текста от родителя */
+  font-size: 14px; /* Размер шрифта для кнопки */
+  cursor: pointer; /* Указатель при наведении */
+  /* text-decoration: underline; Убираем подчеркивание */
+  margin-right: 10px; /* Отступ справа (если нужно) */
+}
+.limit-info {
+  position: absolute; /* Фиксированное позиционирование */
+  width: 175px; /* Ширина блока */
+  height: 63px; /* Высота блока */
+  top: 15px; /* Положение сверху */
+  left: 966px; /* Положение слева */
+  background-color: #D9D9D9; /* Цвет блока */
+  opacity: 0.3; /* Прозрачность */
+  border-radius: 5px; /* Скругление углов */
+  padding: 10px; /* Отступы внутри блока */
+  display: flex; /* Используем flexbox для выравнивания текста */
+  flex-direction: column; /* Вертикальное расположение текста */
+  justify-content: center; /* Центрируем текст по вертикали */
+}
+
+.limit-info p {
+  color: black; /* Цвет текста черный */
+  margin: 0; /* Убираем отступы */
+  padding: 0; /* Убираем внутренние отступы */
+}
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column; /* Изменяем направление на столбец для мобильных */
+    align-items: flex-start; /* Выравнивание по началу */
+    padding: 10px; /* Уменьшаем отступы */
+  }
+
+  .footer-buttons {
+    margin-bottom: 10px; /* Отступ между кнопками и авторизацией */
+    position: relative; /* Устанавливаем относительное позиционирование */
+    top: -30px; /* Поднимаем кнопки вверх */
+  }
+
+  .login-button, .register-button {
+    width: 100%; /* Кнопки занимают всю ширину на мобильных */
+    margin: 5px 0; /* Убираем отступы между кнопками */
+    position: relative; /* Устанавливаем относительное позиционирование */
+    top: -100px; /* Поднимаем кнопки вверх */
+    left: 90px; /* Сдвигаем кнопки вправо */
+  }
+
+  .limit-info {
+    left: 10px; /* Установите новое значение для мобильных */
+    top: 10px; /* Установите новое значение для мобильных */
+    width: auto; /* Установите авто для ширины */
+  }
+  .divider {
+      top: 600px; /* Уменьшаем значение на мобильных */
+  }
+  .footer-logo {
+    width: 100px; /* Уменьшаем ширину логотипа для мобильных */
+    height: auto; /* Сохраняем пропорции логотипа */
+  }
+  .limit-info {
+      margin-left: 200px;
+      margin-top: -10px;
+    }
+}

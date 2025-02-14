@@ -1,0 +1,139 @@
+.new-image-block {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+
+.block-image {
+  display: block;
+  margin: 0;
+}
+
+.tariff-includes {
+  margin-top: 20px;
+}
+
+.tariff-includes {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.bus-text {
+  position: absolute;
+  width: 49px;
+  height: 36px;
+  top: 60px; /* Убедитесь, что это значение соответствует вашему дизайну */
+  left: 1020px; /* Убедитесь, что это значение соответствует вашему дизайну */
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36.31px;
+  letter-spacing: 1%;
+  color: white;
+}
+.bus1-text {
+  position: absolute;
+  width: 313px;
+  height: 22px;
+  top: 90px; /* Убедитесь, что это значение соответствует вашему дизайну */
+  left: 1020px; /* Убедитесь, что это значение соответствует вашему дизайну */
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.78px;
+  letter-spacing: 1%;
+  color: white; /* Укажите нужный цвет текста здесь */
+}
+.pro-text {
+  position: absolute;
+  width: 49px;
+  height: 36px;
+  top: 60px; /* Убедитесь, что это значение соответствует вашему дизайну */
+  left: 562px; /* Убедитесь, что это значение соответствует вашему дизайну */
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36.31px;
+  letter-spacing: 1%;
+}
+.pro1-text {
+  position: absolute;
+  width: 313px;
+  height: 22px;
+  top: 90px; /* Убедитесь, что это значение соответствует вашему дизайну */
+  left: 562px; /* Убедитесь, что это значение соответствует вашему дизайну */
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.78px;
+  letter-spacing: 1%;
+  color: black; /* Укажите нужный цвет текста здесь */
+}
+.price {
+  color: #FF0000; /* Красный для цены */
+  font-weight: bold;
+}
+
+.old-price {
+  text-decoration: line-through; /* Зачеркнутая цена */
+  margin-left: 10px;
+}
+
+.tariff-includes4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.text-block {
+  font-size: 16px;
+  position: sticky;
+  margin-top: 100px;
+  margin-left: 70px;
+}
+
+.check-item {
+  margin: 5px 0;
+}
+
+.current-tariff {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.buttons {
+  position: sticky;
+}
+
+.cust-button1 {
+  padding: 10px 15px;
+  background-color: #4CAF50; /* Зеленый цвет */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 100px;
+  margin-left: 200px;
+}
+.cust-button2 {
+  padding: 10px 15px;
+  background-color: #4CAF50; /* Зеленый цвет */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.cust-button3 {
+  padding: 10px 15px;
+  background-color: #4CAF50; /* Зеленый цвет */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.cust-button:hover {
+  background-color: #45a049; /* Темно-зеленый при наведении */
+}

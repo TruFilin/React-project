@@ -1,0 +1,109 @@
+.query-form-container {
+  position: absolute; /* Устанавливаем абсолютное позиционирование */
+  width: 872px; /* Ширина блока */
+  height: 543px; /* Высота блока */
+  top: 378px; /* Положение сверху */
+  left: 53px; /* Положение слева */
+  padding: 20px; /* Отступы внутри блока */
+  border: 1px solid #ccc; /* Рамка блока */
+  border-radius: 10px; /* Скругление углов блока */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень блока */
+  display: flex; /* Используем flexbox для размещения */
+  flex-direction: column; /* Вертикальная ориентация */
+}
+
+.form-group {
+  margin-bottom: 20px; /* Отступ между группами формы */
+}
+.info-note {
+  margin-top: -350px;
+  z-index: 10;
+}
+label {
+  display: block; /* Отображение метки в блоке */
+  margin-bottom: 5px; /* Отступ снизу */
+}
+
+input {
+  width: 200px; /* Ширина поля ввода */
+  height: 43px; /* Высота поля ввода */
+  padding: 10px; /* Отступы внутри поля */
+  border: 1px solid #ccc; /* Рамка поля */
+  border-radius: 5px; /* Скругление углов поля */
+}
+/* Стили для трех верхних полей */
+.form-group:nth-child(-n+3) input {
+  width: 242px; /* Ширина для трех верхних полей */
+  height: 43px; /* Высота для трех верхних полей */
+}
+.two-column {
+  display: flex; /* Используем flexbox для расположения двух полей в ряд */
+  justify-content: space-between; /* Распределение двух полей */
+  margin-top: 20px; /* Отступ сверху для двух нижних полей */
+}
+
+.two-column > div {
+  width: 48%; /* Убедитесь, что поля занимают одинаковую ширину */
+  margin-bottom: 0; /* Убираем отступ между полями */
+}
+
+.two-column input {
+  width: 200px; /* Ширина для двух нижних полей */
+  height: 43px; /* Высота для полей */
+  padding: 10px; /* Отступы внутри поля */
+  border: 1px solid #ccc; /* Рамка поля */
+  border-radius: 5px; /* Скругление углов поля */
+}
+.error-message {
+  color: red; /* Цвет текста ошибки */
+  font-size: 14px; /* Размер шрифта */
+  margin-top: 5px; /* Отступ сверху */
+}
+.search-button {
+  width: 305px; /* Ширина кнопки */
+  height: 59px; /* Высота кнопки */
+  background: #5970FF; /* Цвет кнопки */
+  color: white; /* Цвет текста кнопки */
+  border: none; /* Убираем рамку */
+  border-radius: 5px; /* Скругление углов кнопки */
+  cursor: pointer; /* Указатель при наведении */
+  position: absolute; /* Абсолютное позиционирование */
+  opacity: 1; /* Полная видимость кнопки */
+  margin-top: -80px;
+  margin-left: 500px;
+}
+@media (max-width: 768px) {
+  .new-image-block {
+  width: 100%;
+  height: auto;
+  position: relative; /* Убедитесь, что блок относительный для позиционирования дочерних элементов */
+  display: flex;
+  flex-direction: column; /* Вертикальное расположение элементов */
+  align-items: center; /* Центрируем элементы по горизонтали */
+  }
+
+  .tariff-includes {
+  display: flex;
+  justify-content: space-around; /* Равномерное распределение тарифов */
+  width: 100%;
+  margin: 20px 0; /* Отступы между тарифами */
+    }
+
+  .text-block {
+  width: 90%; /* Уменьшаем ширину текстового блока */
+  margin: 10px auto; /* Центрируем текстовый блок */
+  text-align: left; /* Выровнять текст влево, если нужно */
+  }
+
+  .current-tariff {
+  text-align: center; /* Центрируем текст */
+  margin: 20px 0; /* Отступы сверху и снизу */
+  }
+
+.buttons {
+  display: flex;
+  flex-direction: column; /* Вертикальное расположение кнопок */
+  align-items: center; /* Центрируем кнопки */
+  width: 100%;
+  }
+}

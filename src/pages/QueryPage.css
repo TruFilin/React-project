@@ -1,0 +1,201 @@
+.query-page {
+  padding: 20px; /* Отступы для страницы запросов */
+  display: flex; /* Вертикальная ориентация */
+  align-items: center; /* Центрирование содержимого */
+}
+.pich-image {
+  position: absolute; /* Абсолютное позиционирование для изображения */
+  width: 442px; /* Ширина изображения */
+  height: 470px; /* Высота изображения */
+  top: 444px; /* Положение сверху */
+  left: 1005px; /* Положение слева */
+  object-fit: cover; /* Сохранение пропорций изображения */
+}
+.doc-image {
+  position: absolute; /* Абсолютное позиционирование для изображения */
+  width: 91px; /* Ширина изображения */
+  height: 111px; /* Высота изображения */
+  top: 225px; /* Положение сверху */
+  left: 938px; /* Положение слева */
+  object-fit: cover; /* Сохранение пропорций изображения */
+}
+.fol-image {
+  position: absolute; /* Абсолютное позиционирование для изображения */
+  width: 140px; /* Ширина изображения */
+  height: 68px; /* Высота изображения */
+  top: 243px; /* Положение сверху */
+  left: 1195px; /* Положение слева */
+  object-fit: cover; /* Сохранение пропорций изображения */
+}
+.text-block {
+  position: absolute; /* Абсолютное позиционирование для блока текста */
+  width: 817px; /* Ширина блока */
+  height: 96px; /* Высота блока */
+  margin-top: -100px;
+}
+
+.info-text {
+  font-family: 'Ferry', sans-serif; /* Шрифт */
+  font-weight: 900; /* Жирность текста */
+  font-size: 40px; /* Размер шрифта */
+  line-height: 48px; /* Высота строки */
+  letter-spacing: 3%; /* Межбуквенный интервал */
+  color: black; /* Цвет текста */
+}
+.search-parameters {
+  position: absolute; /* Абсолютное позиционирование для блока текста */
+  width: 534px; /* Ширина блока */
+  height: 48px; /* Высота блока */
+}
+
+.search-text {
+  font-family: 'Inter', sans-serif; /* Шрифт */
+  font-weight: 400; /* Жирность текста */
+  font-size: 20px; /* Размер шрифта */
+  line-height: 24.2px; /* Высота строки */
+  letter-spacing: 2%; /* Межбуквенный интервал */
+  color: black; /* Цвет текста */
+}
+
+
+.search-info {
+  position: absolute; /* Абсолютное позиционирование для блока текста */
+  width: 259px; /* Ширина блока */
+  height: 17px; /* Высота блока */
+  top: 872px; /* Положение сверху */
+  left: 581px; /* Положение слева */
+}
+
+.info-note {
+  font-weight: 400; /* Жирность текста */
+  font-size: 14px; /* Размер шрифта */
+  line-height: 16.94px; /* Высота строки */
+  letter-spacing: 3%; /* Межбуквенный интервал */
+  color: black; /* Цвет текста */
+}
+.new-block {
+  position: absolute; /* Абсолютное позиционирование для нового блока */
+  width: 406px; /* Ширина блока */
+  height: auto; /* Высота блока автоматически подстраивается под содержимое */
+  top: 414px; /* Положение сверху */
+  left: 480px; /* Положение слева */
+  /* border: 1px solid #ccc; Уберите или закомментируйте эту строку, чтобы убрать края блока */
+  border-radius: 5px; /* Скругление углов блока (если нужно) */
+  background-color: white; /* Цвет фона блока */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень блока */
+  padding: 10px; /* Отступы внутри блока */
+}
+
+.checkbox-item {
+  display: flex; /* Используем flexbox для размещения */
+  align-items: center; /* Выравнивание по вертикали */
+  margin-bottom: 10px; /* Отступ между строками */
+}
+
+.checkbox-item input {
+  margin-right: 10px; /* Отступ между галочкой и текстом */
+  width: 20px; /* Установите размер галочки */
+  height: 20px; /* Установите размер галочки */
+}
+.query-footer {
+  margin-bottom: 1000px;
+}
+.query-header {
+  margin-top: 100px;
+}
+@media (max-width: 768px) {
+  .query-page {
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pich-image {
+    position: sticky;
+    width: 100%;
+    height: auto;
+    top: 1000px;
+    left: 300px;
+  }
+
+  .doc-image {
+    position: sticky;
+    width: 40%;
+    height: auto;
+    top: 100px;
+    left: auto;
+  }
+
+  .fol-image {
+    position: sticky;
+    width: 80%;
+    height: auto;
+    top: auto;
+    left: auto;
+  }
+
+  .text-block {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .info-text {
+    font-size: 24px;
+    line-height: 30px;
+    width: 50%;
+  }
+
+  .search-parameters {
+    width: 100%;
+    height: auto;
+  }
+
+  .search-text {
+    font-size: 16px;
+    line-height: 20px;
+    width: 50%;
+    margin-top: 80px;
+  }
+
+  .search-info {
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: auto;
+    left: auto;
+  }
+
+  .info-note {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .new-block {
+    width: 90%;
+    top: auto;
+    left: auto;
+    margin: 0 auto;
+  }
+
+  .checkbox-item {
+    width: 100%;
+  }
+
+  .checkbox-item input {
+    width: 18px;
+    height: 18px;
+  }
+
+  .query-footer {
+    margin-bottom: 50px;
+  }
+  .form-and-images {
+    margin-top: 350px; /* Увеличиваем отступ сверху для опускания формы ниже */
+    width: 90%; /* Ширина контейнера на мобильных */
+  }
+  .query-header{
+    position: sticky;
+    margin-top: 100px;
+  }
+}

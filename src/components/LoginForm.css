@@ -1,0 +1,179 @@
+.login-form-container {
+  position: absolute; /* Абсолютное позиционирование для размещения */
+  width: 420px; /* Ширина контейнера формы */
+  height: 523px; /* Высота контейнера формы */
+  top: 60px; /* Положение сверху */
+  left: 870px; /* Положение слева */
+  border-radius: 10px; /* Скругление углов контейнера */
+  background-color: white; /* Цвет фона контейнера */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень контейнера */
+}
+
+.login-form {
+  width: 379px; /* Ширина формы внутри контейнера */
+  height: 174px; /* Высота формы */
+  margin: 0 auto; /* Центрирование формы */
+  padding: 20px; /* Отступы внутри формы */
+}
+
+.form-group {
+  margin-bottom: 15px; /* Отступ между группами формы */
+}
+
+label {
+  display: block; /* Отображение метки в блоке */
+  margin-bottom: 5px; /* Отступ снизу */
+}
+
+input {
+  width: 350px; /* Ширина поля ввода */
+  height: 43px; /* Высота поля ввода */
+  padding: 10px; /* Отступы внутри поля */
+  border: 1px solid #ccc; /* Рамка поля */
+  border-radius: 5px; /* Скругление углов поля */
+}
+.reset-password-button {
+  background: none; /* Убираем фон */
+  border: none; /* Убираем рамку */
+  color: #5970FF; /* Цвет текста */
+  font-family: 'Inter', sans-serif; /* Шрифт */
+  font-weight: 400; /* Жирность текста */
+  font-size: 14px; /* Размер шрифта */
+  line-height: 16.94px; /* Высота строки */
+  letter-spacing: 2%; /* Межбуквенный интервал */
+  text-decoration: underline; /* Подчёркивание текста */
+  cursor: pointer; /* Указатель при наведении */
+  margin-top: 10px; /* Отступ сверху для кнопки */
+  margin-left: 150px;
+}
+.container-login-button {
+  width: 350px; /* Ширина кнопки */
+  height: 59px; /* Высота кнопки */
+  background:#5970FF;
+  color: white; /* Цвет текста кнопки */
+  border: none; /* Убираем рамку */
+  border-radius: 5px; /* Скругление углов кнопки */
+  cursor: pointer; /* Указатель при наведении */
+  margin-top: 40px; /* Отступ сверху для кнопки */
+  margin-left: 10px;
+}
+.login-with {
+  margin-top: 20px; /* Отступ сверху для надписи */
+  font-family: 'Inter', sans-serif; /* Шрифт */
+  font-size: 16px; /* Размер шрифта */
+  line-height: 20px; /* Высота строки */
+  color: black; /* Цвет текста */
+  margin-top: 120px;
+}
+
+.social-buttons {
+  display: flex; /* Используем flexbox для размещения кнопок */
+  justify-content: space-between; /* Распределение кнопок по горизонтали */
+  margin-top: 50px; /* Отступ сверху для кнопок */
+}
+
+.social-button {
+  width: 100%; /* Ширина кнопки */
+  height: 40px; /* Высота кнопки */
+  color: white; /* Цвет текста кнопки */
+  border: none; /* Убираем рамку */
+  border-radius: 5px; /* Скругление углов кнопки */
+  cursor: pointer; /* Указатель при наведении */
+}
+
+.google-button {
+  background-color: #DB4437; /* Цвет кнопки Google */
+}
+
+.facebook-button {
+  background-color: #3B5998; /* Цвет кнопки Facebook */
+}
+
+.yandex-button {
+  background-color: #FFDD00; /* Цвет кнопки Яндекс */
+}
+.modal {
+  position: fixed; /* Фиксированное позиционирование */
+  z-index: 1000; /* Поверх остальных элементов */
+  left: 0;
+  top: 0;
+  width: 100%; /* Полная ширина */
+  height: 100%; /* Полная высота */
+  overflow: auto; /* Прокрутка, если необходимо */
+  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+}
+
+.modal-content {
+  background-color: white; /* Цвет фона модального окна */
+  margin: 15% auto; /* Отступ сверху и центрирование */
+  padding: 20px; /* Отступы внутри модального окна */
+  border: 1px solid #888; /* Рамка модального окна */
+  width: 80%; /* Ширина модального окна для мобильных */
+  max-width: 300px; /* Максимальная ширина */
+  text-align: center; /* Центрируем текст внутри модального окна */
+}
+
+.close {
+  color: #aaa; /* Цвет для кнопки закрытия */
+  float: right; /* Правое выравнивание */
+  font-size: 28px; /* Размер шрифта */
+  font-weight: bold; /* Жирность */
+  cursor: pointer; /* Указатель при наведении */
+}
+
+.close:hover,
+.close:focus {
+  color: black; /* Цвет при наведении */
+  text-decoration: none; /* Убираем подчеркивание */
+  cursor: pointer; /* Указатель при наведении */
+}
+
+@media (max-width: 768px) {
+  .login-form-container {
+    width: 90%; /* Ширина контейнера на мобильных устройствах */
+    height: auto; /* Высота автоматически для мобильных */
+    top: 500px; /* Уменьшаем отступ сверху */
+    left: 5%; /* Центрируем контейнер на мобильных */
+    padding: 10px; /* Уменьшаем отступы внутри контейнера */
+  }
+
+  .login-form {
+    width: 100%; /* Ширина формы на мобильных */
+  }
+
+  .reset-password-button {
+    margin-left: 0; /* Убираем отступ для мобильных */
+    display: block; /* Делаем кнопку блочной для мобильных */
+    text-align: center; /* Центрируем текст */
+  }
+
+  .container-login-button {
+    width: 80%; /* Кнопка занимает всю ширину на мобильных */
+  }
+
+  .social-buttons {
+    flex-direction: column; /* Кнопки располагаются в столбик на мобильных */
+    margin-top: 20px; /* Уменьшаем отступ между кнопками */
+  }
+
+  .social-button {
+    width: 100%; /* Кнопки занимают всю ширину */
+    margin-bottom: 10px; /* Отступ между кнопками */
+  }
+  .modal {
+    position:sticky; /* Фиксированное позиционирование */
+    z-index: 1000; /* Поверх остальных элементов */
+    left: 100px;
+    top: 50px;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+    overflow: auto; /* Прокрутка, если необходимо */
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+  }
+  .modal-content {
+    position: sticky;
+    margin: 30% auto; /* Увеличиваем отступ сверху для лучшего отображения на мобильных */
+    width: 50%; /* Ширина модального окна для мобильных */
+    max-width: none; /* Убираем максимальную ширину для мобильных */
+  }
+}
